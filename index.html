@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio | Guilherme Frisske</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portifolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <canvas id="matrix-canvas"></canvas>
+    <div class="background-overlay"></div>
+
+    <header>
+        <div class="foto">
+            <img src="foto_gui-removebg-preview (1).png" alt="Guilherme Frisske">
+        </div>
+        <h1>Guilherme Frisske Nunes</h1>
+        <p>Desenvolvedor de Sistemas em busca de excelência técnica e inovação constante.</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Estudante de Desenvolvimento focado em criar aplicações escaláveis e interfaces intuitivas. Combinando lógica sólida com design moderno.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skills-grid">
+    <div class="skill" style="animation-delay: 0s;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+        <span>CSS3</span>
+    </div>
+
+    <div class="skill" style="animation-delay: 0.5s;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+        <span>HTML5</span>
+    </div>
+
+    <div class="skill" style="animation-delay: 1s;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+        <span>JavaScript</span>
+    </div>
+
+    <div class="skill" style="animation-delay: 1.5s;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+        <span>MySQL</span>
+    </div>
+
+    <div class="skill" style="animation-delay: 2s;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+        <span>PHP</span>
+    </div>
+
+    <div class="skill" style="animation-delay: 2.5s;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+        <span>Python</span>
+    </div>
+
+    <div class="skill" style="animation-delay: 3s;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+        <span>React Native</span>
+    </div>
+</div>
+        </div>
+    </section>
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-grid">
+            <div id="skill-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-body">
+            <img id="modal-img" src="" alt="">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+</div>
+            <div class="projeto-card">
+                <div class="projeto-icon"><i class="fa-solid fa-utensils"></i></div>
+                <h3>Minha Cozinha</h3>
+                <p>Plataforma completa de receitas com busca inteligente e categorias personalizadas.</p>
+                <div class="tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JS</span>
+                </div>
+                <a href="#" class="projeto-link">Ver no GitHub →</a>
+            </div>
+
+            <div class="projeto-card">
+                <div class="projeto-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>Dashboard Python</h3>
+                <p>Sistema de análise de dados automatizado com gráficos interativos e relatórios em tempo real.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Matplotlib</span>
+                </div>
+                <a href="#" class="projeto-link">Ver no GitHub →</a>
+            </div>
+
+            <div class="projeto-card">
+                <div class="projeto-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <h3>API Pokédex</h3>
+                <p>Aplicativo Mobile para consulta de Pokémons integrando PokéAPI com performance otimizada.</p>
+                <div class="tags">
+                    <span class="tag">React Native</span>
+                    <span class="tag">API</span>
+                    <span class="tag">Mobile</span>
+                </div>
+                <a href="#" class="projeto-link">Ver no GitHub →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <div class="contato-container">
+            <a href="mailto:guilhermfrisske454@gmail.com" class="contato-item">
+                <i class="fa-solid fa-paper-plane"></i>
+                <div class="contato-text"><strong>E-mail</strong><span>guilhermfrisske454@gmail.com</span></div>
+            </a>
+            <a href="https://github.com/guilhermefrisske" target="_blank" class="contato-item">
+                <i class="fa-brands fa-github-alt"></i>
+                <div class="contato-text"><strong>GitHub</strong><span>@guilhermefrisske</span></div>
+            </a>
+            <a href="https://linkedin.com/in/guilherme-frisske" target="_blank" class="contato-item">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <div class="contato-text"><strong>LinkedIn</strong><span>Guilherme Frisske</span></div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 - Guilherme Frisske Nunes • 
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const codeChars = '01<>/{}[]();:+-*=&%$#!?';
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = [];
+        for (let x = 0; x < columns; x++) drops[x] = 1;
+
+        function draw() {
+            ctx.fillStyle = 'rgba(2, 6, 23, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#38bdf8';
+            ctx.font = fontSize + 'px monospace';
+            for (let i = 0; i < drops.length; i++) {
+                const text = codeChars.charAt(Math.floor(Math.random() * codeChars.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                drops[i]++;
+            }
+        }
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+        setInterval(draw, 35);
+
+        const skillData = {
+        'CSS3': 'Experiência em Flexbox, Grid, Animações e Design Responsivo.',
+        'HTML5': 'Estruturação semântica, acessibilidade e SEO.',
+        'JavaScript': 'Manipulação de DOM, ES6+, APIs e lógica assíncrona.',
+        'MySQL': 'Modelagem de dados, queries complexas e integração com backend.',
+        'PHP': 'Desenvolvimento de sistemas dinâmicos e integração com bancos de dados.',
+        'Python': 'Automação, análise de dados e scripts inteligentes.',
+        'React Native': 'Criação de aplicativos móveis híbridos para iOS e Android.'
+        };
+
+        const modal = document.getElementById('skill-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDesc = document.getElementById('modal-description');
+        const modalImg = document.getElementById('modal-img');
+        const closeBtn = document.querySelector('.close-modal');
+
+        document.querySelectorAll('.skill').forEach(skillCard => {
+        skillCard.addEventListener('click', () => {
+        const skillName = skillCard.querySelector('span').innerText;
+        const skillIcon = skillCard.querySelector('img').src;
+
+        modalTitle.innerText = skillName;
+        modalDesc.innerText = skillData[skillName] || 'Informações em breve...';
+        modalImg.src = skillIcon;
+
+        modal.style.display = 'block';
+        });
+        });
+
+        closeBtn.onclick = () => modal.style.display = 'none';
+        window.onclick = (event) => {
+        if (event.target == modal) modal.style.display = 'none';
+        };
+        document.querySelectorAll('.skill').forEach(card => {
+    card.addEventListener('click', () => {
+        const name = card.querySelector('span').innerText;
+        const imgTarget = document.getElementById('modal-img');
+        const titleTarget = document.getElementById('modal-title');
+        const descTarget = document.getElementById('modal-description');
+        
+        imgTarget.style.animation = 'none';
+        titleTarget.style.animation = 'none';
+        descTarget.style.animation = 'none';
+
+        setTimeout(() => {
+            imgTarget.src = card.querySelector('img').src;
+            titleTarget.innerText = name;
+            descTarget.innerText = skillData[name] || 'Informações em breve...';
+            
+    
+            imgTarget.style.animation = '';
+            titleTarget.style.animation = '';
+            descTarget.style.animation = '';
+            
+            modal.style.display = 'block';
+        }, 10);
+    });
+});
+    </script>
+</body>
+</html>
